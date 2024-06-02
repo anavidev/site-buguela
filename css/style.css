@@ -24,6 +24,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
     background: rgb(217, 165, 66);
     height: 10vh;
 }
@@ -110,25 +111,26 @@ p{
     justify-content: center;
     width: 100%;
 }
-/* blog 1º parte */
 
- 
-  
-  
-  .header_ {
+/* blog 1º parte */
+#sessao_blog{
+    background-color: rgb(217, 165, 66);
+}
+
+.header_ {
     padding: 10px;
     font-size: 20px;
     text-align: center;
     background: white;
-  }
+}
   
   
-  .leftcolumn {
+.leftcolumn {
     float: left;
     width: 75%;
-  }
+}
   
-  h5{
+h5{
     color:rgb(161, 64, 21) ;
 }
 h2{
