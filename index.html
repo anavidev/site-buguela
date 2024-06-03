@@ -7,7 +7,7 @@
 - engrossar um pouco as fontes dos paragrafos;
 - diminuir o tamanho do blog e utilizar as mesmas cores e contornos de acordo com o modelo figma;
 - adicionar os produtos de acordo com o modelo figma;
-- aumentar logo -->
+- aumentar e centralizar logo -->
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -19,51 +19,22 @@
     <title>Buguela - Home</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo-imagem"><img src="img/logo.png">
-                <a class="logo" href="img/logo.png"> Buguela</a>
-            </div>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/produtos.html">Produtos</a></li>
-                <li><a href="pages/sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header"></header>
     <main>
-        <section>
-            <!-- <h1>Sessão com slide</h1> -->
+        <section id="sessaoSlide"> <!-- corrigir -->
             <h1><br><br>Reutilizar e transformar <br> é o melhor caminho para um futuro melhor <br><br></h1> 
-                <div class="container">
-                    <div class="foto"><br><br> 
-                        <img src="img/bolsaprinc.jpg" class="img" alt="">
-                    </div>
-                </div>
+                <ul id="slide">
+                    <li class="slider-active"><img src="img/slide1.jpg"></li>
+                    <li><img src="img/slide3.jpg"></li>
+                    <li><img src="img/slide6.jpg"></li>
+                </ul>
         </section>
-        <section>
-            <h1><br>Principais Produtos</h1> 
-            <div class="cards">
-                <div class="card card1">
-                    <img src="img/pochetes.jpeg" alt="imagem 1">
-                    <h4>Pochete <br><br></h4> 
-                    <p>Pochete jeans com estampas.</p>
-                </div>
-                <div class="card card2">
-                    <img src="img/chaveiro.jpeg" alt="imagem 2">
-                    <h4>Chaveiro <br><br></h4> 
-                    <p>Chaveiro jeans personalizado.</p>
-                </div>
-                <div class=" card card3">
-                    <img src="img/sintetica.jpg" alt="imagem 3">
-                    <h4>Bolsa <br><br></h4> 
-                    <p>Bolsa sintética com forro de bagun,<br>impermeável para uso escolar ou de maquiagem.</p> 
-                </div>
-            </div>
+        <section id="sessaoCards">
+            <h1><br>Principais Produtos</h1>
         </section>
-        <section>  
+        <section id="sessaoBlog">  
             <div class="header_">
-                <h3> Blog</h3> 
+                <h3>Blog</h3> 
             </div>
             <div class="row">
                 <div class="leftcolumn">    
@@ -165,6 +136,8 @@
             <p>Buguela 2024 &copy; | Todos direitos reservados</p>
         </div>
     </footer>
+    <script src="js/script.js"></script>
+    <script src="js/script_index.js"></script>
     <script src="js/blog.js"></script>
 </body>
 </html>

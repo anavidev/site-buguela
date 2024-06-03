@@ -4,38 +4,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-a{
-    color:rgb(161, 64, 21);
-    text-decoration: none;
-    transition: 0.3s;
-    margin: auto;
-}
-a :hover{
-    opacity: 0.7;
+
+/* header */
+
+header{
+    background-color: rgb(217, 165, 66);
+    height: 120px;
 }
 
-.logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;  
-}
-nav{
+.navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
-    background: rgb(217, 165, 66);
-    height: 10vh;
 }
-main{
-    background: url(bg.jgp) no-repeat center center;
-    background-size: cover;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+    margin: auto;
 }
+
 .nav-list{
     list-style: none;
     display: flex;
@@ -44,21 +35,51 @@ main{
     letter-spacing: 3px;
     margin-left: 32px;
 }
+
 .logo-imagem{
-    width: 50%;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
-   display: flex;
-   
+    width: 80px;
+    height: 80px;
+}
+
+main{
+    background: url(bg.jgp) no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     
 }
+
+/* slideshow  - corrigir */
+#slide {
+    list-style: none;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 70%;
+}
+
+#slide li {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+#slide li.slider-active {
+    z-index: 1;
+    opacity: 1;
+}
+
 /* .cards */
-.cards{
+#divCards{
     display: flex;
     justify-content: center;
 }
-.card {
+.produto {
     margin: 50px;
     background-color:rgb(217, 165, 66);
     color: #fff;
@@ -87,18 +108,18 @@ p{
     color:rgb(161, 64, 21);
     text-align: center;
 }
-.card>img{
+.produto>.imgCard{
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
 }
-.card>h1{
+.produto>h1{
     font-size: 25px ;
     padding-top: 10px;
 
 }
-.card>p{
+.produto>p{
     font-size: 17px ;
     padding-top: 20px 20px;
 
@@ -192,10 +213,6 @@ h2{
   }
   
 /* blog */
-
-
-
-
 
 .container_comment {
     background-color: rgb(217, 165, 66);
