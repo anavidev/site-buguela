@@ -1,4 +1,3 @@
-/* utilizar esse arquivo para estilizar o site */
 * {
     margin: 0;
     padding: 0;
@@ -20,11 +19,13 @@ header{
     font-weight: bold;
 }
 
-a{
+.nav-link{
     color: rgb(0, 0, 0);
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.2s ease-in-out; 
     margin: auto;
+    font-size: 1.6rem;
+    margin: 0px 30px;
 }
 
 .nav-list{
@@ -79,11 +80,11 @@ main{
     background-color:rgb(217, 165, 66);
     color: #fff;
     width: 300px;
-    height: 410px;
-    border-radius: 10px ;
+    height: 450px;
+    border-radius: 10px;
     text-align: center;
-    
-    box-shadow: rgb(5, 5, 5) 0px 19px 38px rgb(0,0, 0, 0.22)
+    box-shadow: rgb(5, 5, 5) 0px 19px 38px rgb(0,0, 0, 0.22);
+    transition: transform 0.3s ease-in-out;
 }
 h1{
     font-size: 5e;
@@ -102,6 +103,7 @@ h4{
 p{
     color:rgb(161, 64, 21);
     text-align: center;
+    margin-top: 10px;
 }
 .produto>.produto-imagem{
     width: 100%;
@@ -475,28 +477,19 @@ a:hover{
 }
 
 /* galeria */
-.galeria_container{
+
+#galeria-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 2vw;
     padding: 0 1vw;
 }
-.galeria_itens{
+.galeria-fotos{
     width: 250px;
     height: 250px;
     border: 10px solid #f3da6a;
     box-shadow: 5px 5px 5px #0006;
-    flex-grow: 1;
-    transition: transform .5s linear;
-
+    transition: transform 0.3s ease-in-out;
 }
-.galeria_itens img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-.galeria_itens:active{
-    transform: scale(1.3)}
  

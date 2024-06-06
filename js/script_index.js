@@ -48,6 +48,17 @@ for (let item of principais_produtos){
     divProduto.appendChild(nomeProduto);
     divProduto.appendChild(descricaoProduto);
     divCards.appendChild(divProduto);
+
+    function mouseDentroCards(){
+        divProduto.style.transform = "scale(1.1)";
+    }
+    
+    function mouseForaCards(){
+        divProduto.style.transform = "scale(1)";
+    }    
+    
+    divProduto.addEventListener('mouseover', mouseDentroCards);
+    divProduto.addEventListener('mouseout', mouseForaCards);
     
 }
 
