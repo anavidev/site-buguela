@@ -55,21 +55,90 @@ main{
 }
 
 /* slide */
-.carrossel{
-    overflow: hidden;
-    width: 500px;
+.slider{
+    margin:0 auto;
+    width: 800px;
     height: 500px;
+    overflow: hidden;
+
 }
 
-.container-slide{
+.slides{
+    width: 400%;
+    height: 400px;
     display: flex;
-    transition: 0.7s ease-in-out;
-    transform: translateX(0);
 }
 
-.imgSlide{
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.fotoSlide{
     width: 100%;
-    height: 100%;    
+    height: 120%;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: #ffffff solid 2px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin: 55% 0%;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin: 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff
+
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff
+
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff
+
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff
 }
 
 /* .cards */
@@ -78,7 +147,7 @@ main{
     justify-content: center;
 }
 .produto {
-    margin: 50px;
+    margin: -30px 50px;
     background-color:rgb(217, 165, 66);
     color: #fff;
     width: 300px;
@@ -88,12 +157,12 @@ main{
     text-align: center;
     box-shadow: rgb(5, 5, 5) 0px 19px 38px rgb(0,0, 0, 0.22);
     transition: transform 0.3s ease-in-out;
+    text-align: center;
 
 }
 h1{
     font-size: 5e;
-    margin: 0;
-    padding: 0;
+    margin: 70px 0px;
     text-align: center;
     color:rgb(161, 64, 21);
 }
@@ -107,7 +176,7 @@ h4{
 p{
     color:rgb(161, 64, 21);
     text-align: center;
-    margin-top: 10px;
+    margin: 20px 20px;
 }
 .produto>.produto-imagem{
     width: 100%;
@@ -137,22 +206,30 @@ p{
 }
 
 /* blog 1º parte */
-#sessao_blog{
-    background-color:  rgb(161, 64, 21);
+
+#sessaoBlog{
+    margin: 50px 0px;
+    width: 50%;
+    text-align: center;
 }
+
+#sessaoBlog h3{
+    text-align: center;
+}
+
 .row {
+    background-color: rgb(217, 165, 66);
+    border:rgb(161, 64, 21) solid 4px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .header_ {
     padding: 10px;
     font-size: 20px;
     text-align: center;
-    background: white;   
 }
-.header_ h3{
-    text-align: center;
-}
+
 .leftcolumn {
     float: left;
     width: 55%;
@@ -169,25 +246,44 @@ h2{
     color:rgb(161, 64, 21) ;
 }
   .rightcolumn {
-    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 25%;
-    padding-left: 20px;
+    padding: 0px 20px;
+    border: 2px solid rgb(161, 64, 21);
   }
   .rightcolumn p {
     text-align: left;
     text-indent: 15px;
   }
-  .fakeimg img{
+  .fakeimg1 img{
+    background-color:rgb(161, 64, 21);
+    width: 106%;
+    padding: 10px;
+    margin: -15px -5px;
+
+  }
+
+  .fakeimg2 img{
     background-color:rgb(161, 64, 21);
     width: 90%;
     padding: 10px;
+    margin: 0px 7px;
   }
+
   .fakeimg_ img{
     background-color: rgb(161, 64, 21);
     width: 80%;
     padding: 10px;
     
   }
+
+  .fakeimg_ p{
+    text-align: left;
+    margin: 0px -2px;
+  }
+
   .imagens img{
     background-color: rgb(161, 64, 21);
     height: 60%;
@@ -195,10 +291,19 @@ h2{
     padding: 10px;
   }
   .card_1 {
-    background-color: white;
+    background-color:rgb(217, 165, 66);
     padding: 20px;
     margin-top: 20px;
   }
+
+.card_1 p{
+    margin: 0px -2px;
+}
+
+.card_1 h3{
+    padding: 5px 0px;
+}
+
   .row:after {
     content: "";
     display: table;
@@ -215,7 +320,6 @@ h2{
 
 .container_comment {
     background-color: rgb(217, 165, 66);
-    border: 4px solid rgb(161, 64, 21);
     padding: 20px;
     font-family: monospace;
     margin: auto;
@@ -253,8 +357,7 @@ h2{
 }
 
 .content {
-    width: 100%;
-    
+    width: 100%;  
 }
 
 .user {
@@ -266,9 +369,7 @@ h2{
     
     
 }
-.content input{
-    
-}
+
 .commentinput > input {
     border: none;
     padding: 10px;
@@ -374,19 +475,23 @@ h2{
 footer{
     background-color: rgb(217, 165, 66);
     padding-top: 50px;
-    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container{
-    width: 100%;
+    width: 70%;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
 
-}
 .footer-content{
-    width: 26.3%;
-   
+    width: 25%;  
 }
+
+.bottom-bar{
+    width: 100%;
+}
+
 h3{
     font-size: 28px;
     margin-bottom: 15px;
@@ -403,14 +508,23 @@ h3{
 }
 .list{
     padding: 0;
+    list-style: none;
 }
+
 .list li{
     width: auto;
     text-align: left;
-    list-style-type:none ;
     padding: 7px;
     position: relative;
+    margin: 0px -10px;
+    
 }
+
+.list li a{
+    text-decoration: none;
+    color: rgb(161, 64, 21);
+}
+
 .list li::before{
     content: '';
     position: absolute;
@@ -438,9 +552,6 @@ h3{
     cursor: pointer;
     width: 40px;
     height: 30px;
-   
-   
-
 }
 a:hover{
     color: rgb(161, 64, 21);
@@ -462,22 +573,25 @@ a:hover{
         color:rgb(161, 64, 21) ;
 }
 .contato-icons{
-    text-align: center;
-    padding: 0;
+    list-style: none;
+    width: auto;
+    text-align: left;
+    padding: 7px;
+    position: relative;
 }
 .contato-icons li{
-    display: inline-block;
-    text-align: left;
+    flex-direction: row;
     padding: 5px;
     color: rgb(161, 64, 21) ;
-    
-  
+    margin: 0px -20px;
 }
+
 .contato-icons img{
     width: 50%;
     cursor: pointer;
     width: 40px;
-    height: 30px; 
+    height: 30px;
+    margin: 0px 10px; 
        
 }
 
@@ -489,6 +603,7 @@ a:hover{
     justify-content: space-evenly;
     gap: 2vw;
     padding: 0 1vw;
+    margin: 50px 0px;
 }
 .galeria-fotos{
     width: 250px;
@@ -497,111 +612,6 @@ a:hover{
     box-shadow: 5px 5px 5px #0006;
     transition: transform 0.3s ease-in-out;
 }
-/* slide */
-.slider{
-    margin:0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
 
-}
 
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
 
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    position: relative;
-    transition: 2s;
-}
-
-.slide img{
-    width: 800px;
-}
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display:flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px ;
-}
-
-.manual-btn:hover{
-    background-color: #fff;
-
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-
-}
-
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-
-.navigation-auto div{
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #fff
-
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #fff
-
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #fff
-
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #fff
-}

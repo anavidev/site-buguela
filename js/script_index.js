@@ -39,7 +39,7 @@ for (let item of principais_produtos){
     imgProduto.className = "produto-imagem";
     
     let nomeProduto = document.createElement('h4');
-    nomeProduto.innerText = item.descricao;
+    nomeProduto.innerText = item.nome;
 
     let descricaoProduto = document.createElement('p');
     descricaoProduto.innerText = item.descricao;
