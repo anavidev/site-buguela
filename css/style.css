@@ -8,7 +8,8 @@
 
 header{
     background-color: rgb(217, 165, 66);
-    height: 120px;
+    height: 100px;
+     margin-bottom: 20px;
 }
 
 .navbar{
@@ -17,6 +18,7 @@ header{
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
+    
 }
 
 .nav-link{
@@ -82,9 +84,11 @@ main{
     width: 300px;
     height: 450px;
     border-radius: 10px;
+    border: 4px solid rgb(161, 64, 21);
     text-align: center;
     box-shadow: rgb(5, 5, 5) 0px 19px 38px rgb(0,0, 0, 0.22);
     transition: transform 0.3s ease-in-out;
+
 }
 h1{
     font-size: 5e;
@@ -119,6 +123,7 @@ p{
 .produto>p{
     font-size: 17px ;
     padding-top: 20px 20px;
+    text-align: left;
 
 }
 .foto {
@@ -128,24 +133,33 @@ p{
     display: flex;
     justify-content: center;
     width: 100%;
+    
 }
 
 /* blog 1º parte */
 #sessao_blog{
-    background-color: rgb(217, 165, 66);
+    background-color:  rgb(161, 64, 21);
 }
-
+.row {
+    display: flex;
+    justify-content: center;
+}
 .header_ {
     padding: 10px;
     font-size: 20px;
     text-align: center;
-    background: white;
+    background: white;   
 }
-  
-  
+.header_ h3{
+    text-align: center;
+}
 .leftcolumn {
     float: left;
-    width: 75%;
+    width: 55%;
+}
+.leftcolumn p {
+    text-align: left;
+    text-indent: 15px;
 }
   
 h5{
@@ -160,48 +174,36 @@ h2{
     padding-left: 20px;
   }
   .rightcolumn p {
-    text-align: justify;
+    text-align: left;
     text-indent: 15px;
   }
-  
-  
   .fakeimg img{
-    background-color: #f3da6a;
+    background-color:rgb(161, 64, 21);
     width: 90%;
     padding: 10px;
   }
   .fakeimg_ img{
-    background-color: #f3da6a;
+    background-color: rgb(161, 64, 21);
     width: 80%;
     padding: 10px;
     
   }
   .imagens img{
-    background-color: #f3da6a;
-    height: 400px;
-    width: 100%;
+    background-color: rgb(161, 64, 21);
+    height: 60%;
+    width: 80%;
     padding: 10px;
   }
-  
-  
-  
-  
   .card_1 {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
   }
-  
- 
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
-  
-
-  
- 
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {
       width: 100%;
@@ -213,13 +215,14 @@ h2{
 
 .container_comment {
     background-color: rgb(217, 165, 66);
+    border: 4px solid rgb(161, 64, 21);
     padding: 20px;
     font-family: monospace;
-    width: 500px;
-
     margin: auto;
     height: 20%;
-    width: 100%;
+    width: 80%;
+    margin-bottom: 20px;
+    
 }
 
 .head {
@@ -231,6 +234,7 @@ h2{
     margin: 10px 0;
     font-family: sans-serif;
     font-size: 0.9em;
+    
 }
 
 .commentbox {
@@ -243,7 +247,6 @@ h2{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    
     margin-right: 20px;
     object-fit: cover;
     object-position: center;
@@ -251,6 +254,7 @@ h2{
 
 .content {
     width: 100%;
+    
 }
 
 .user {
@@ -258,10 +262,13 @@ h2{
     outline: none;
     margin: 5px 0;
     color: #808080;
-    margin-left: 20px;
     padding: 10px;
+    
+    
 }
-
+.content input{
+    
+}
 .commentinput > input {
     border: none;
     padding: 10px;
@@ -270,6 +277,7 @@ h2{
     border-bottom: 2px solid blue;
     margin-bottom: 10px;
     width: 95%;
+   
 }
 
 .buttons {
@@ -366,40 +374,39 @@ h2{
 footer{
     background-color: rgb(217, 165, 66);
     padding-top: 50px;
+    
 }
 .container{
-    width: 1140px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
 
 }
 .footer-content{
-    width: 33.3%;
-    
-
+    width: 26.3%;
+   
 }
 h3{
     font-size: 28px;
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
     color:rgb(161, 64, 21) ;
 }
 .footer-content p{
-    width: 190px;
-    margin: auto;
+    width: 120px;
     padding: 7px;
-
+    
 }
 .footer-content ul{
-    text-align: center;
+    text-align: left;
 }
 .list{
     padding: 0;
 }
 .list li{
     width: auto;
-    text-align: center;
+    text-align: left;
     list-style-type:none ;
     padding: 7px;
     position: relative;
@@ -424,7 +431,6 @@ h3{
 }
 .social-icons li{
     display: inline-block;
-    text-align: center;
     padding: 5px;
 }
 .social-icons img{
@@ -432,7 +438,7 @@ h3{
     cursor: pointer;
     width: 40px;
     height: 30px;
-   display: flex;
+   
    
 
 }
@@ -461,19 +467,18 @@ a:hover{
 }
 .contato-icons li{
     display: inline-block;
-    text-align: center;
+    text-align: left;
     padding: 5px;
     color: rgb(161, 64, 21) ;
+    
   
 }
 .contato-icons img{
     width: 50%;
     cursor: pointer;
     width: 40px;
-    height: 30px;
-   
-   
-
+    height: 30px; 
+       
 }
 
 /* galeria */
@@ -488,8 +493,115 @@ a:hover{
 .galeria-fotos{
     width: 250px;
     height: 250px;
-    border: 10px solid #f3da6a;
+    border: 4px solid rgb(161, 64, 21);
     box-shadow: 5px 5px 5px #0006;
     transition: transform 0.3s ease-in-out;
 }
- 
+/* slide */
+.slider{
+    margin:0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display:flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px ;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff
+
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff
+
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff
+
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff
+}
