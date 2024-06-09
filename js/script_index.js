@@ -49,16 +49,16 @@ for (let item of principais_produtos){
     divProduto.appendChild(descricaoProduto);
     divCards.appendChild(divProduto);
 
-    function mouseDentroCards(){
+    function mouseOverCards(){
         divProduto.style.transform = "scale(1.1)";
     }
     
-    function mouseForaCards(){
+    function mouseOutCards(){
         divProduto.style.transform = "scale(1)";
     }    
     
-    divProduto.addEventListener('mouseover', mouseDentroCards);
-    divProduto.addEventListener('mouseout', mouseForaCards);
+    divProduto.addEventListener('mouseover', mouseOverCards);
+    divProduto.addEventListener('mouseout', mouseOutCards);
     
 }
 

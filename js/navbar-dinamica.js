@@ -17,15 +17,4 @@ navbar.innerHTML = `
 </ul>`;
 header.appendChild(navbar);
 
-/* evento animacao navbar */
-const navlink = document.querySelectorAll('.nav-link');
-
-function mouseoverNav(){
-    navlink.style.backgroundColor = '#a14015';
-}
-
-navlink.addEventListener('mouseover', mouseoverNav);
-
-navbar.appendChild(navlink);
-
 

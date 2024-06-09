@@ -2,14 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    h1{
+        font-size: 3rem;
+    };
+    p{
+        font-size: 1.2rem;
+    };
+    h2{
+        font-size: 2rem;
+    }
+    h5{
+        font-size: 1.2rem;
+    }
+    
 }
 
 /* header */
 
 header{
     background-color: rgb(217, 165, 66);
-    height: 100px;
-     margin-bottom: 20px;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .navbar{
@@ -41,13 +56,12 @@ header{
 
 .logo-imagem{
     cursor: pointer;
-    width: 80px;
-    height: 80px;
+    width: 60%;
     
 }
 
 main{
-    background: url(bg.jgp) no-repeat center center;
+    background: no-repeat center center;
     background-size: cover;
     height: 100%;
     justify-content: center;
@@ -143,20 +157,31 @@ main{
 }
 
 /* .cards */
-.cards_produtos{
+#cards_produtosBolsa{
     display: flex;
     justify-content: center;
 }
+
+#cards_produtosPochete{
+    display: flex;
+    justify-content: center;
+}
+
+#cards_produtosColo{
+    display: flex;
+    justify-content: center;
+}
+
 .card_produtos {
     margin: 50px;
     background-color:rgb(217, 165, 66);
-    color: #fff;
     width: 300px;
     height: 410px;
     border-radius: 10px ;
     text-align: center;
     border: 4px solid rgb(161, 64, 21);
-    box-shadow: rgb(5, 5, 5) 0px 19px 38px rgb(0,0, 0, 0.22)
+    box-shadow: rgb(5, 5, 5) 0px 19px 38px rgb(0,0, 0, 0.22);
+    transition: transform 0.3s ease-in-out;
 }
 .card_produtos>img{
     width: 100%;
@@ -253,7 +278,6 @@ p{
     width: 50%;
     text-align: center;
     margin-bottom: 4%;
-   
 }
 
 #sessaoBlog h3{
@@ -401,6 +425,12 @@ h2{
     margin-right: 20px;
     object-fit: cover;
     object-position: center;
+}
+
+#qtdComentarios{
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: rgb(161, 64, 21);
 }
 
 .content {

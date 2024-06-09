@@ -33,7 +33,6 @@
         </section>-->
         <h1>Reutilizar e transformar é o melhor caminho para um futuro bem melhor!</h1>
         <div class="slider">
-
             <div class="slides">
                 <!-- Radio Buttons-->
                 <input type="radio" name="radio-btn" id="radio1">
@@ -41,14 +40,12 @@
                 <input type="radio" name="radio-btn" id="radio3">
                 <input type="radio" name="radio-btn" id="radio4">
                 <!--Fim Radio Buttons-->
-    
                 <!--Slide images-->
                 <div class="slide first" >
                    <img class="fotoSlide" src="img/slide1.jpg"  alt="Imagem 1"/> 
                 </div>
                 <div class="slide">
-                   <img class="fotoSlide" src="img/imagem2.jpeg" alt="Imagem 2"/> 
-                   
+                   <img class="fotoSlide" src="img/imagem2.jpeg" alt="Imagem 2"/>   
                 </div>  
                 <div class="slide"> 
                    <img class="fotoSlide" src="img/bolsa9.jpg"  alt="Imagem 3"/>
@@ -57,7 +54,6 @@
                    <img class="fotoSlide" src="img/produtos.webp" alt="Imagem 4"/>
                 </div>
                    <!--Fim Slide Images-->
-    
                 <!--Navigation auto-->
                 <div class="navigation-auto">
                     <div class="auto-btn1"></div>
@@ -71,7 +67,7 @@
             <h1>Principais Produtos</h1>
         </section>
         <section id="sessaoBlog">
-            <h3>Blog</h3>   
+            <h1>Blog</h1>   
             <div class="row">
                 <div class="leftcolumn">    
                     <div class="card_1">
@@ -113,9 +109,11 @@
                 </div>
                 <div class="container_comment">
                     <div class="head">
-                        <h1>Poste um comentário:</h1>
+                        <h3>Poste um comentário:</h3>
                     </div>
-                    <div><span id="comment">0</span>Comentários</div>
+                    <div id="qtdComentarios">
+                        <span id="comment">0</span> Comentários
+                    </div>
                     <div class="text">
                         <p>Estamos felizes em ouvir de você</p>
                     </div>
@@ -129,12 +127,9 @@
                                     <input type="text" placeholder="Digite o comentário" class="usercomment">
                                     <div class="buttons">
                                         <button type="submit" disabled id="publish">Publicar</button>
-                                        <div class="notify">
-                                            <input type="checkbox" class="notifyinput"> <span>Me avise</span>
-                                        </div>
                                     </div>
                                 </div>
-                                <p class="policy">Este site é protegido pelo reCAPTCHA e pelo Google  <a href="">política de Privacidade</a> e <a href="">Termos de serviço</a>.</p>
+                                <p class="policy">Este site é protegido pelo reCAPTCHA e pelo Google  <a href="#">política de Privacidade</a> e <a href="#">Termos de serviço</a>.</p>
                             </div>
                         </div>
                     </div>
@@ -155,8 +150,8 @@
             <div class="footer-content">
                 <h3>Redes Sociais</h3>
                     <ul class="social-icons">
-                        <li><a href="https://www.instagram.com/ateliebuguela/"><img src="img/instagram.png" alt="Perfil Instagram"></a></li>
-                        <li><a href="https://www.facebook.com/people/Buguela-Art/100031027042358/"><img src="img/facebook.png" alt="Perfil Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/ateliebuguela/" target="_blank"><img src="img/instagram.png" alt="Perfil Instagram"></a></li>
+                        <li><a href="https://www.facebook.com/people/Buguela-Art/100031027042358/" target="_blank"><img src="img/facebook.png" alt="Perfil Facebook"></a></li>
                     </ul>
             </div>
             <div class="footer-content">
@@ -168,12 +163,12 @@
             </div>
         </div>
         <div class="bottom-bar">
-            <p>Buguela 2024 &copy; | Todos direitos reservados</p>
+            <p>Buguela &copy; 2024 | Todos direitos reservados</p>
         </div>
     </footer>
     <script src="js/navbar-dinamica.js"></script>
+    <script src="js/slide.js"></script>
     <script src="js/script_index.js"></script>
     <script src="js/blog.js"></script>
-    <script src="js/slide.js"></script>
 </body>
 </html>
