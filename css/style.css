@@ -43,6 +43,7 @@ header{
     cursor: pointer;
     width: 80px;
     height: 80px;
+    
 }
 
 main{
@@ -142,6 +143,45 @@ main{
 }
 
 /* .cards */
+.cards_produtos{
+    display: flex;
+    justify-content: center;
+}
+.card_produtos {
+    margin: 50px;
+    background-color:rgb(217, 165, 66);
+    color: #fff;
+    width: 300px;
+    height: 410px;
+    border-radius: 10px ;
+    text-align: center;
+    border: 4px solid rgb(161, 64, 21);
+    box-shadow: rgb(5, 5, 5) 0px 19px 38px rgb(0,0, 0, 0.22)
+}
+.card_produtos>img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.card_produtos>h1{
+    font-size: 25px ;
+    padding-top: 10px;
+
+}
+.card_produtos>p{
+    font-size: 17px ;
+    padding-top: 20px 20px;
+
+}
+.foto {
+    width: 600px;
+    height: 350px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 #divCards{
     display: flex;
     justify-content: center;
@@ -207,14 +247,18 @@ p{
 
 /* blog 1º parte */
 
+
 #sessaoBlog{
-    margin: 50px 0px;
+    margin: auto;
     width: 50%;
     text-align: center;
+    margin-bottom: 4%;
+   
 }
 
 #sessaoBlog h3{
     text-align: center;
+    margin: 70px 0px;
 }
 
 .row {
@@ -249,10 +293,11 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
-    padding: 0px 20px;
+    width: 28%;
     border: 2px solid rgb(161, 64, 21);
+   
   }
+  
   .rightcolumn p {
     text-align: left;
     text-indent: 15px;
@@ -282,6 +327,7 @@ h2{
   .fakeimg_ p{
     text-align: left;
     margin: 0px -2px;
+   
   }
 
   .imagens img{
@@ -293,7 +339,7 @@ h2{
   .card_1 {
     background-color:rgb(217, 165, 66);
     padding: 20px;
-    margin-top: 20px;
+    
   }
 
 .card_1 p{
@@ -302,6 +348,7 @@ h2{
 
 .card_1 h3{
     padding: 5px 0px;
+    margin: 10px -2px;
 }
 
   .row:after {
@@ -485,7 +532,7 @@ footer{
 }
 
 .footer-content{
-    width: 25%;  
+    width: 30%;  
 }
 
 .bottom-bar{
