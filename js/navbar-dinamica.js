@@ -7,7 +7,7 @@ navbar.className = 'navbar';
 navbar.innerHTML = `
 <div>
     <a href="index.html">
-        <img class="logo-imagem" src="../img/logo.png">
+        <img class="logo-imagem" src="img/logo.png">
     </a>
 </div>
 <ul class="nav-list">

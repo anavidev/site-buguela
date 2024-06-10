@@ -24,9 +24,9 @@ divCards.id = "divCards";
 sessaoCards.appendChild(divCards);
 
 let principais_produtos = [
-    {nome: "Pochete", descricao: "Pochete jeans com estampas.", img: "../img/pochetes.jpeg"},
-    {nome: "Chaveiro", descricao: "Chaveiro jeans personalizado.", img: "../img/chaveiro.jpeg"},
-    {nome: "Bolsa", descricao: "Bolsa sintética com forro de bagum, impermeável para uso escolar ou de maquiagem.", img: "../img/sintetica.jpg"}
+    {nome: "Pochete", descricao: "Pochete jeans com estampas.", img: "img/pochetes.jpeg"},
+    {nome: "Chaveiro", descricao: "Chaveiro jeans personalizado.", img: "img/chaveiro.jpeg"},
+    {nome: "Bolsa", descricao: "Bolsa sintética com forro de bagum, impermeável para uso escolar ou de maquiagem.", img: "img/sintetica.jpg"}
 ]
 
 for (let item of principais_produtos){
