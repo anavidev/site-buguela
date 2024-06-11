@@ -1,21 +1,3 @@
-/* slide */
-const box = document.querySelector('.container-slide');
-const imagens = document.querySelectorAll('.imgSlide');
-
-let contador = 0;
-
-function slider(){
-    contador++;
-
-    if(contador > imagens.length - 1){
-        contador = 0;
-    }
-
-    box.style.transform = `translateX(${-contador * 500}px)`
-}
-
-setInterval(slider, 1500);
-
 /* evento mostrar principais produtos */
 const sessaoCards = document.querySelector('#sessaoCards');
 
