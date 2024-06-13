@@ -1,9 +1,9 @@
 export default() => {
 
     const templateHeader = `
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#home">
-            <img src="img/logo.png" alt="Logo" width="60" height="70" class="d-inline-block align-text-left text-primary">
+    <div class="container-fluid bg-primary text-primary display-6">
+        <a class="navbar-brand  fw-semibold " href="#home">
+            <img src="img/logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-left text-primary">
             Buguela
         </a>
     </div>   

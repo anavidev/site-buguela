@@ -2,19 +2,12 @@ export default () => {
 
     const templateMainIndex = `
     <section>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/slide1.PNG" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/slide2.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/slide4.PNG" class="d-block w-100" alt="...">
-              </div>
+         <h1 class="p-5 display-4 fw-semibold text-primary text-center">Reutilizar e transformar é o melhor caminho para um futuro bem melhor!</h1>
+        <div class="container">
+            <div class="foto">
+                <img src="img/quem somos.png" class="img" alt="" >
             </div>
-          </div>
+        </div>
     </section>
     <section class="text-center" id="sessaoCards">
         <h1 class="p-5 display-4 fw-semibold text-primary">Principais produtos</h1>
@@ -42,8 +35,8 @@ export default () => {
         </div>    
     </section>
     <section id="sessaoBlog">
-      <h1>Blog</h1>   
-      <div class="row">
+      <h1 class="p-5 display-4 fw-semibold text-primary">Blog</h1>
+      <div class="row_">
           <div class="leftcolumn">    
               <div class="card_1">
                   <h2>Sustentabilidade</h2>

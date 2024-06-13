@@ -1,6 +1,17 @@
 export default() => {
 
    const templateMainProdutos = `
+    <section>
+       <h1 class="p-5 display-4 fw-semibold text-primary text-center">Quais os produtos confeccionamos?</h1>
+        <div class="container">
+            <div class="foto">
+                <img src="img/imagem3.jpg" class="img" alt="" >
+            </div>
+        </div>
+             <p class="pb-5 px-5 h3 fw-semibold text-primary text-center"> Buguela é uma Slow fashion que ajuda no resgate da autoestima feminina, 
+        <br> com o propósito de propagar a cultura afro-brasileira, <br>
+        por meio de peças afirmativas e representativas da cultura africana.</p>
+         </section>
     <section class="text-center" id="sessaoCards">
         <h1 class="p-5 display-4 fw-semibold text-primary">Bolsas</h1>
         <div class="container-fluid">
@@ -27,7 +38,7 @@ export default() => {
         </div>    
     </section>
     <section class="text-center" id="sessaoCards">
-        <h1 class="p-5 display-4 fw-semibold text-primary">Pochete</h1>
+        <h1 class="p-5 display-4 fw-semibold text-primary">Pochetes</h1>
         <div class="container-fluid">
             <div class="row justify-content-around">
                 <div class="col-2 card rounded-4 border border-4 bg-primary border-primary">
