@@ -1,13 +1,12 @@
 export default() => {
 
     const templateHeader = `
-    <div class="container-fluid bg-primary text-primary display-6">
-        <a class="navbar-brand  fw-semibold " href="#home">
-            <img src="img/logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-left text-primary">
-            Buguela
+    <div class="container-fluid bg-primary">
+        <a class="navbar-brand" href="#home">
+            <img id="fotoLogo" src="img/logo.png" alt="Logo" width="60" height="70" class="d-inline-block align-text-left text-primary">
         </a>
     </div>   
-        <ul class="nav nav-underline justify-content-around w-100">
+        <ul class="bg-primary nav nav-underline justify-content-around w-100">
             <li class="nav-item"> 
                 <a class="nav-link text-primary fw-semibold fs-2" href="#home">Home</a>
             </li>   

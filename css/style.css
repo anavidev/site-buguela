@@ -2,17 +2,26 @@
     margin:0,;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
   /** cor background **/
 
-  .bs-body-color{
-    background-color: rgb(238, 238, 238) !important;
+.bs-body-color{
+    background-color: rgb(255, 255, 255) !important;
 }   
 
 .bg-primary{
     background-color: rgb(217, 165, 66) !important;
 }
+
+.btn-primary{
+    background-color: rgb(161, 64, 21) !important;
+}
+
+
+
+
+/** cor border **/
 
 .border-primary{
     border-color: rgb(161, 64, 21) !important;
@@ -30,63 +39,65 @@
 /** header **/
 header{
     height: 10%;
+    display: flex;
+    justify-content: space-around;
 
 }
-#sessaoCards{
-    height: 100%;
-   
+
+#sessaoIntro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+#fotoLogo{
+    width: 8%;
+    height: auto;
+}
+
+#sessaoIntro h1{
+    text-align: center;
+}
+
 /** cards **/
 
 .card{
-    width: 18rem;
+    width: 25rem;
+    margin: 10px 0px;
+}
 
+#fotoIntro{
+    width: 30%;
+    border:rgb(161, 64, 21) solid 4px;
+}
+
+.principais-produtos{
     display: flex;
-    justify-content: center;
-}
-.foto{
-    display: flex;
-    justify-content: center;
-    margin: 4%;
-    
+    justify-content: space-around;
+    align-items: center;
 }
 
-/** form **/
-
-button{
-    width: 100px;
-    height: 50px;
+.produto{
+    margin: 0px 50px;
 }
 
-::placeholder{
-    color: rgba(255, 255, 255, 0.5) !important;
-}
-
-textarea{
-    height: 10rem;
-}
-#logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;  
-}
 /* blog 1º parte */
 
 
 #sessaoBlog{
     margin: auto;
-    width: 60%;
+    width: 50%;
     text-align: center;
     margin-bottom: 4%;
 }
 
- h1{
+#sessaoBlog h3{
     text-align: center;
-    margin: 20px 0px;
-    font-size: max(50px,6vw);
+    margin: 70px 0px;
 }
 
-.row_ {
+.row- {
     background-color: rgb(217, 165, 66);
     border:rgb(161, 64, 21) solid 4px;
     display: flex;
@@ -101,42 +112,33 @@ textarea{
 
 .leftcolumn {
     float: left;
-    width: 65%;
-    flex-wrap: wrap;
-    
+    width: 55%;
 }
 .leftcolumn p {
     text-align: left;
     text-indent: 15px;
-    font-size: 1vw;
-}
-h2{
-    text-align: left;
-    font-size: 4vw;
-    color:rgb(161, 64, 21) ;
 }
 p{
     color:rgb(161, 64, 21) ;
-    font-size: 2vw;
 }
 h5{
-    text-align: left;
-   
-    font-size: 2vw;
     color:rgb(161, 64, 21) ;
 }
-
-
+h2{
+    color:rgb(161, 64, 21) ;
+}
 h3{
     color:rgb(161, 64, 21) ;
 }
-
+h1{
+    color:rgb(161, 64, 21) ;
+    font-size: 28px;
+}
   .rightcolumn {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
-   
+    width: 28%;
     border: 2px solid rgb(161, 64, 21);
    
   }
@@ -144,7 +146,6 @@ h3{
   .rightcolumn p {
     text-align: left;
     text-indent: 15px;
-    font-size: 2vw;
   }
   .fakeimg1 img{
     background-color:rgb(161, 64, 21);
@@ -210,8 +211,12 @@ h3{
     display: table;
     clear: both;
   }
-  
-  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn, .container_comment {
+      width: 100%;
+      padding: 0;
+    }
+  }
   
 /* blog */
 
@@ -224,21 +229,6 @@ h3{
     width: 80%;
     margin-bottom: 20px;
     
-}
-.container_comment p {
-    text-align: left;
-    text-indent: 15px;
-    font-size: 1vw;
-}
-.head h3{
-    text-align: left;
-    font-size: 4vw;
-    color:rgb(161, 64, 21)   
-}
-.qtdComentarios{
-    text-align: left;
-    text-indent: 15px;
-    font-size: 1vw;
 }
 
 .head {
@@ -275,17 +265,7 @@ h3{
 }
 
 .content {
-    width: 80%; 
-    
-}
-.content input {
-    width: 80%; 
-    
-}
-.buttons #publish {
-    width: 90%;
-    font-size: 3vw;
-
+    width: 100%;  
 }
 
 .user {
@@ -303,12 +283,15 @@ h3{
     padding: 10px;
     padding-left: 0;
     outline: none;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(161, 64, 21);
     margin-bottom: 10px;
     width: 95%;
    
 }
 
+button{
+    width: 100%;
+}
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -328,7 +311,7 @@ h3{
 }
 
 .buttons > button.abled {
-    background: blue;
+    background: rgb(161, 64, 21);
     color: #fff;
 }
 
@@ -338,14 +321,10 @@ h3{
     font-family: Arial, sans-serif;
     color: #808080;
 }
-.policy p{
-    text-align: left;
-    text-indent: 15px;
-    font-size: 1vw;
-}
+
 .policy a {
     text-decoration: none;
-    color: blue;
+    color: rgb(161, 64, 21);
 }
 
 .notify {
@@ -403,18 +382,27 @@ h3{
     color: #808080;
     font-size: 0.8em;
 }    
-/* galeria */
-.galeria_container{
+
+#galeria-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 2vw;
     padding: 0 1vw;
+    margin: 50px 0px;
 }
+.galeria-fotos{
+    width: 250px;
+    height: 250px;
+    border: 4px solid rgb(161, 64, 21);
+    box-shadow: 5px 5px 5px #0006;
+    transition: transform 0.3s ease-in-out;
+}
+
 .galeria_itens{
     width: 250px;
     height: 250px;
-    border:  10 px solid rgb(161, 64, 21);;
+    border:  10 px solid rgb(161, 64, 21);
     box-shadow: 5px 5px 5px #0006;
     flex-grow: 1;
     transition: transform .5s linear;
@@ -433,14 +421,33 @@ h3{
     margin: auto;
    
  }
+
+#divFotoSobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto{
+    border:rgb(161, 64, 21) solid 4px;
+}
+
+#sessaoSobre{
+    text-align: center;
+}
+
+#sessaoBolsaColo{
+    margin: 30px 0px;
+}
+
 ul{
     list-style: none;
 }
-.row-{
+.row_{
     display: flex;
     flex-wrap: wrap;
 }
-/* footer */
 .footer{
     background-color:  rgb(217, 165, 66);
     padding: 70px 0;
@@ -448,7 +455,7 @@ ul{
    
 }
 .footer-col{
-    width: 28%;
+    width: 33%;
     padding: 0 15px;
     
 }
@@ -501,7 +508,7 @@ ul{
     transition: all 0.5s ease;
 }
 .footer-col1{
-    width: 8%;
+    width: 10%;
 }
 .footer-col .sociais-links ul li a:hover{
     color: rgb(161, 64, 21);
@@ -518,9 +525,6 @@ ul{
     color: #fff;
     transition: all 0.5s ease;
 }
-/* .footer-col .contato-links ul li{
-    display
-} */
 .footer-col .contato-links ul li a:hover{
     color: rgb(161, 64, 21);
     background-color: #fff;
